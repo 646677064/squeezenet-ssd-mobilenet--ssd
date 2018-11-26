@@ -1,0 +1,2 @@
+squeezenet-ssd
+mobilenet--ssd
