@@ -5,11 +5,14 @@ test_interval: 400
 base_lr: 0.001
 display: 10
 max_iter: 30000
-lr_policy: "step"
+lr_policy: "multistep"
+stepvalue: 10000
+stepvalue: 20000
+#lr_policy: "step"
 gamma: 0.1
 momentum: 0.9
 weight_decay: 0.0005
-stepsize: 4000
+#stepsize: 4000
 snapshot: 400
 snapshot_prefix: "/home/liushuai/caffe-ssd/laji/squeezeNet_512_512/git-squeeze-ssd-v2//snapshot/squeezeDet_ssd_512v2"
 solver_mode: GPU
